@@ -41,7 +41,7 @@ defmodule GenStageKafka do
     bootstrapProducer( kafka_options )
 
     # Indicate that we are a GenStage consumer
-    {:consumer, %{kafka_options: kafka_options}
+    {:consumer, %{kafka_options: kafka_options}}
   end
 
   @doc """
@@ -72,7 +72,7 @@ defmodule GenStageKafka do
     hosts = Keyword.get(kafka_options, :host, [localhost: 9092])
     topic = Keyword.get(kafka_options, :topic, "no_topic")
 
-    :ok = :brod.start_client(kafka_hosts, @kafka_client_id, _client_config=[])
+    :ok = :brod.start_client(hosts, @kafka_client_id, _client_config=[])
     :ok = :brod.start_producer(@kafka_client_id, [topic], _producer_config=[])
   end
 
