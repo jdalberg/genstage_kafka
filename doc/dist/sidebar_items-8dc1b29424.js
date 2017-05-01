@@ -1,0 +1,1 @@
+sidebarNodes={"extras":[{"id":"api-reference","title":"API Reference","group":"","headers":[{"id":"Modules","anchor":"modules"}]}],"exceptions":[],"modules":[{"id":"GenStageKafka","title":"GenStageKafka","functions":[{"id":"handle_events/3","anchor":"handle_events/3"},{"id":"init/1","anchor":"init/1"},{"id":"start_link/1","anchor":"start_link/1"}]}],"protocols":[]}
